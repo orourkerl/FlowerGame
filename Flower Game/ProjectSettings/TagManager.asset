@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Flower
+  - Water
+  - Shovel
+  - Fertilizer
+  - Sunlight
   layers:
   - Default
   - TransparentFX
@@ -40,4 +45,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Back
+    uniqueID: 3817156445
+    locked: 0
+  - name: Front
+    uniqueID: 426187627
     locked: 0
