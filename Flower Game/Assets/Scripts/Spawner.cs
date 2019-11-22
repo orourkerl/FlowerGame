@@ -34,11 +34,21 @@ public class Spawner : MonoBehaviour
 
         while(!stop)
 		{
-            //TODO randomize
 			randItem = Random.Range(0, items.Length);
 			Vector3 spawnPosition = new Vector3(Random.Range(-spawnXBound, spawnXBound), Random.Range(-spawnYBound, spawnYBound));
 			Instantiate(items[randItem], spawnPosition, Quaternion.identity);
 			yield return new WaitForSeconds(spawnWait);
 		}
 	}
+
+    void AccomodateNeedyFlowers()
+    {
+        //TODO make a list of each item created or counter
+        //when a certian item does not exist
+        //check every frame if there is a flower that needs that item
+        //if it is needed by a flower
+        //if not 
+    }
+
+
 }
